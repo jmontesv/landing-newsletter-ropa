@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header__logo {
+  padding: 2rem;
+}
+.header__banner__image {
+  object-fit: cover;
+  display: block;
+}
