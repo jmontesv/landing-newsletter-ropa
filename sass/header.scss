@@ -1,11 +1,7 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  background-color: white;
+  max-width: calc(100% - 900px);
 }
 .header__logo {
   padding: 2rem;
-}
-.header__banner__image {
-  object-fit: cover;
-  display: block;
 }
