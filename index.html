@@ -18,19 +18,7 @@
         <img class="heder__logo__image" src="public/img/logo.svg" alt="logo" />
       </div>
     </header>
-    <div class="banner">
-      <picture>
-        <source
-          srcset="public/img/hero-desktop.jpg"
-          media="(min-width: 1440px)"
-        />
-        <img
-          class="banner__image"
-          src="public/img/hero-mobile.jpg"
-          alt="banner"
-        />
-      </picture>
-    </div>
+    <div class="banner"></div>
     <section class="newsletter">
       <h1 class="newsletter__title">
         <span class="newsletter__title--weak">WE'RE</span>
@@ -42,17 +30,21 @@
         launch deals.
       </p>
       <form id="form-newsletter" class="newsletter__form">
-        <input
-          name="email"
-          class="newsletter__field"
-          type="text"
-          placeholder="Email Address"
-        />
-        <button type="submit" class="newsletter__button"></button>
+        <div class="newsletter__group">
+          <input
+            name="email"
+            class="newsletter__field-email"
+            type="text"
+            placeholder="Email Address"
+          />
+          <button type="submit" class="newsletter__button"></button>
+        </div>
+        <div class="message-error">
+          <p id="message-error" class="message-error__text--not-show">
+            Please provide a valid email
+          </p>
+        </div>
       </form>
-      <p id="message-error" class="not-show" style="color: red">
-        Email is incorrect
-      </p>
     </section>
     <script src="js/index.js"></script>
   </body>

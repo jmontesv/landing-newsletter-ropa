@@ -19,19 +19,49 @@
 .newsletter__description {
   text-align: inherit;
   line-height: 2rem;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 .newsletter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
   background-color: transparent;
   margin-top: 1rem;
+}
+.newsletter__group {
   width: 100%;
   position: relative;
-  text-align: center;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transform: translateY(-50%);
+    background-image: url("/public/img/icon-error.svg");
+    background-repeat: no-repeat;
+    right: 3.8rem;
+    top: 50%;
+    opacity: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    &:after {
+      right: 5.8rem;
+    }
+  }
 }
-.newsletter__field {
+.newsletter__group--error {
+  &:after {
+    opacity: 1;
+  }
+}
+.newsletter__field-email {
+  position: relative;
+  border: 3px solid transparent;
   background-color: transparent;
-  width: 100%;
-  padding: 1.2rem 1.2rem;
+  width: inherit;
+  padding: 1.2rem 2rem;
   border-radius: 60px;
   border: thin solid var(--desaturated-red);
   color: black;
@@ -40,9 +70,14 @@
 
   &::placeholder {
     color: var(--desaturated-red);
+    background-color: transparent;
   }
   &:focus {
     outline: none;
+  }
+  &--border-red {
+    @extend .newsletter__field-email;
+    border: 3px solid var(--soft-red);
   }
 }
 .newsletter__button {
@@ -58,7 +93,11 @@
   padding: 0 1.9rem;
   border-radius: 28px;
   box-shadow: -5px 15px 20px 1px hsla(0, 93%, 68%, 0.2);
-
+  &:hover {
+    background-image: url("/public/img/icon-arrow.svg"), var(--gradient1);
+    background-position: center;
+    box-shadow: -5px 15px 20px 1px var(--gradient1);
+  }
   &:focus {
     outline: none;
   }

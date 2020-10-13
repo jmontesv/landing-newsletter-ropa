@@ -1,0 +1,14 @@
+.message-error {
+  font-size: 0.8rem;
+  color: var(--soft-red);
+  width: 100%;
+  max-width: 500px;
+  padding-top: 0.6rem;
+  padding-left: 2.1rem;
+  &__text {
+    text-align: left;
+  }
+  &__text--not-show {
+    opacity: 0;
+  }
+}

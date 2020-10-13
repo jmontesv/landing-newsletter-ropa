@@ -1,7 +1,6 @@
 .banner {
-  display: block;
-}
-.banner__image {
-  display: block;
-  width: 100%;
+  min-width: 375px;
+  height: 250px;
+  background-image: url("/public/img/hero-mobile.jpg");
+  background-size: cover;
 }
