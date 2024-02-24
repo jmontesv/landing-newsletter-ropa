@@ -39,7 +39,7 @@
     height: 30px;
     width: 30px;
     transform: translateY(-50%);
-    background-image: url("/public/img/icon-error.svg");
+    background-image: url("public/img/icon-error.svg");
     background-repeat: no-repeat;
     right: 3.8rem;
     top: 50%;
@@ -87,14 +87,14 @@
   top: 0;
   bottom: 0;
   border: none;
-  background-image: url("/public/img/icon-arrow.svg"), var(--gradient2);
+  background-image: url("public/img/icon-arrow.svg"), var(--gradient2);
   background-repeat: no-repeat;
   background-position: center;
   padding: 0 1.9rem;
   border-radius: 28px;
   box-shadow: -5px 15px 20px 1px hsla(0, 93%, 68%, 0.2);
   &:hover {
-    background-image: url("/public/img/icon-arrow.svg"), var(--gradient1);
+    background-image: url("public/img/icon-arrow.svg"), var(--gradient1);
     background-position: center;
     box-shadow: -5px 15px 20px 1px var(--gradient1);
   }
