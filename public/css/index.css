@@ -42,7 +42,7 @@ h1 {
 .banner {
   min-width: 375px;
   height: 250px;
-  background-image: url("public/img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-size: cover;
 }
 
@@ -93,7 +93,7 @@ h1 {
   height: 30px;
   width: 30px;
   transform: translateY(-50%);
-  background-image: url("public/img/icon-error.svg");
+  background-image: url("img/icon-error.svg");
   background-repeat: no-repeat;
   right: 3.8rem;
   top: 50%;
